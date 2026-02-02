@@ -7,3 +7,11 @@ password_hash, varchar
 role, int 
 is_active, tinyint bool 1/0
 crated_at, datetime current_timestamp
+
+
+table kelas
+id_kelas, int primary key auto increment
+nama_kelas, varchar
+simbol_kelas, varchar (4)
+wali, varchar
+hp_wali, varchar 
