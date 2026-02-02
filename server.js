@@ -8,6 +8,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Import route untuk user
 const usersRoute = require('./routes/users');
+// Import route untuk kelas
+const kelasRoute = require('./routes/kelas');
 
 // Route utama
 app.get("/", (req, res) => {
@@ -16,6 +18,9 @@ app.get("/", (req, res) => {
 
 // Tambahkan route untuk user
 app.use('/api/user', usersRoute);
+
+// Tambahkan route untuk kelas
+app.use('/api/kelas', kelasRoute);
 
 app.listen(port, () => {
   console.log(`Server jalan di http://localhost:${port}`);
