@@ -15,3 +15,19 @@ nama_kelas, varchar
 simbol_kelas, varchar (4)
 wali, varchar
 hp_wali, varchar 
+
+
+table siswa
+id_siswa, int primary key auto increment
+id_kelas, int
+nama_lengkap, varchar
+panggilan, varchar
+tanggal_lahir, date
+jenis_kelamin, tinyint 0 perempuan 1 laki laki
+foto, varchar 100
+alamat, text
+no_hp, varchar
+aktif, tinyint
+created_at, datetime current_timestamp
+disabilitas, tinyint
+dijemput, tinyint 
