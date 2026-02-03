@@ -31,3 +31,4 @@ aktif, tinyint
 created_at, datetime current_timestamp
 disabilitas, tinyint
 dijemput, tinyint 
+nis, varchar (10) maksimal 10 minimal 3

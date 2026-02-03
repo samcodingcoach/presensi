@@ -10,6 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 const usersRoute = require('./routes/users');
 // Import route untuk kelas
 const kelasRoute = require('./routes/kelas');
+// Import route untuk siswa
+const siswaRoute = require('./routes/siswa');
 
 // Route utama
 app.get("/", (req, res) => {
@@ -21,6 +23,9 @@ app.use('/api/user', usersRoute);
 
 // Tambahkan route untuk kelas
 app.use('/api/kelas', kelasRoute);
+
+// Tambahkan route untuk siswa
+app.use('/api/siswa', siswaRoute);
 
 app.listen(port, () => {
   console.log(`Server jalan di http://localhost:${port}`);
